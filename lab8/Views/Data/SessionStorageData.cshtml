@@ -1,0 +1,16 @@
+﻿@{
+    ViewData["Title"] = "Session Storage Data";
+}
+
+<h1>Session Storage Data</h1>
+
+<script>
+    // Сохранить данные в sessionStorage
+    sessionStorage.setItem("UserName", "Николай Жиков");
+
+    // Получить данные из sessionStorage
+    var userName = sessionStorage.getItem("UserName");
+
+    // Вывести данные на страницу
+    document.write("Имя пользователя: " + userName);
+</script>

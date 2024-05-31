@@ -1,0 +1,14 @@
+﻿@{
+    ViewData["Title"] = "Cookie Data";
+}
+
+<h1>Cookie Data</h1>
+
+<p>Имя пользователя: @ViewData["UserName"]</p>
+
+@using Microsoft.AspNetCore.Http;
+
+@{
+    var userName = Context.Request.Cookies["UserName"];
+    ViewData["UserName"] = userName;
+}

@@ -1,0 +1,16 @@
+﻿@{
+    ViewData["Title"] = "Local Storage Data";
+}
+
+<h1>Local Storage Data</h1>
+
+<script>
+    // Сохранить данные в localStorage
+    localStorage.setItem("UserName", "Николай Жиков");
+
+    // Получить данные из localStorage
+    var userName = localStorage.getItem("UserName");
+
+    // Вывести данные на страницу
+    document.write("Имя пользователя: " + userName);
+</script>
